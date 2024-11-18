@@ -1,0 +1,280 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(rgba(29, 9, 9, 0.5), rgba(0, 0, 0, 0.8)),
+    url("images/bg-1.jpg") no-repeat center center/cover;
+  color: white;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.fourthpage {
+  background-image: linear-gradient(rgba(22, 10, 10, 0.5), rgba(0, 0, 0, 0.8)),
+    url("images/bg-1.jpg");
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+/* Three Column Section */
+.three-column {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.text-column {
+  flex: 1.7;
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+/* Full Width Section */
+.full-width {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Two Column Section */
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.two-column .image-column {
+  flex: 1;
+}
+
+.two-column .text-column {
+  flex: 1.5;
+}
+p {
+  text-align: justify;
+  line-height: 23px;
+}
+
+/* Responsive Design */
+@media (max-width: 785px) {
+  .image-column .chef {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .image-column .dishes {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .three-column,
+  .two-column {
+    flex-direction: column;
+  }
+  .header img {
+    width: 55%;
+    text-align: center;
+  }
+
+  .text-column,
+  .image-column {
+    flex: 1 0 100%;
+  }
+  p {
+    font-size: small;
+  }
+  .image-column .dishes {
+    margin-top: 35px;
+    width: 40%;
+  }
+  .image-column .chef {
+    width: 30%;
+    margin-top: 58px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 659px) {
+  .image-column .chef {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 35%;
+  }
+  .dishes {
+    width: 60%;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 625px) {
+  .image-column .chef {
+    margin-top: 45px;
+    margin-bottom: 60px;
+    width: 35%;
+  }
+  .image-column .dishes {
+    width: 60%;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 594px) {
+  .image-column .chef{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 35%;
+  }
+  .image-column .dishes {
+    width: 60%;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 561px) {
+  .image-column .chef{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 40%;
+  }
+  .image-column .dishes {
+    width: 80%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 525px) {
+  .image-column .chef{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 40%;
+  }
+  .image-column .dishes {
+    width: 80%;
+    margin-top:25px;
+  }
+}
+@media (max-width: 493px) {
+  .image-column .chef{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  .image-column .dishes {
+    width: 80%;
+    margin-top:25px;
+  }
+}
+@media (max-width: 489px) {
+  .image-column .chef {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .image-column .dishes {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 468px) {
+  .image-column .chef {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .image-column .dishes {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 453px) {
+  .image-column .chef {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  .image-column .dishes {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 453px) {
+  .image-column .chef {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    width: 50%;
+  }
+  
+}
+@media (max-width: 396px) {
+  .image-column .chef {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 50%;
+  }
+  
+}
+@media (max-width: 381px) {
+  .image-column .chef {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    width: 50%;
+  }
+  
+}
+@media (max-width: 381px) {
+  .image-column .chef {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 45%;
+  }
+  
+}
+

@@ -53,19 +53,6 @@ body {
     url("images/bg-1.jpg");
 }
 
-.secondpage {
-  background-image: linear-gradient(rgba(37, 22, 22, 0.5), rgba(0, 0, 0, 0.8)),
-    url("images/bg-2.jpg");
-}
-
-.thirdpage {
-  background-image: linear-gradient(rgba(37, 22, 22, 0.5), rgba(0, 0, 0, 0.8)),
-    url("images/bg-3.jpg");
-}
-.fourthpage {
-  background-image: linear-gradient(rgba(37, 22, 22, 0.5), rgba(0, 0, 0, 0.8)),
-    url("images/bg-4.jpg");
-}
 .content {
   position: relative;
   z-index: 2;
@@ -200,8 +187,8 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  word-spacing: 5px;
-  letter-spacing: 5px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 .full-width-heading::after {
@@ -243,9 +230,9 @@ body {
   padding-top: 0px;
   color: #fff;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 2px;
-  word-spacing: 5px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 .image-column img {
   max-width: 100%;
