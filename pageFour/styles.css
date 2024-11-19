@@ -263,17 +263,39 @@ p {
 }
 @media (max-width: 381px) {
   .image-column .chef {
-    margin-top: -20px;
-    margin-bottom: 0px;
-    width: 50%;
-  }
-  
-}
-@media (max-width: 381px) {
-  .image-column .chef {
     margin-top: 0px;
     margin-bottom: 0px;
     width: 45%;
+  }
+  
+}
+@media (max-width: 364px) {
+  .image-column .chef {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    width: 50%;
+    
+  }
+  .text-column p{
+    word-spacing: -2px !important;
+    line-height: 22px !important;
+  }
+  
+}
+@media (max-width: 364px) {
+  .text-column p{
+    word-spacing: -1.5px !important;
+    line-height: 22px !important;
+  }
+  
+}
+@media (max-width: 300px) {
+  .text-column p{
+    word-spacing: -1px !important;
+    line-height: 22px !important;
+  }
+  .nowpara p{
+    word-spacing: -5px !important;
   }
   
 }

@@ -97,7 +97,7 @@ body {
   background-color: #ff0000;
   color: #fff;
   padding: 10px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -204,8 +204,6 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  word-spacing: 1px;
-  letter-spacing: 1px;
 }
 
 .full-width-heading::after {
@@ -247,9 +245,7 @@ body {
   padding-top: 0px;
   color: #fff;
   font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
+  line-height: 9px;
 }
 .image-column img {
   max-width: 100%;
@@ -344,20 +340,12 @@ width: 49%;
   padding-left: 30px;
   padding-right: 20px;
   margin-top: -25px;
-  /* height: 80%; */
-}
-
-
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
 }
 @media screen and (max-width: 1024px) {
   .container {
     padding: 5%;
   }
-  
+
   .header h1 {
     font-size: 200%;
   }
@@ -393,6 +381,18 @@ width: 49%;
     font-size: 90%;
   }
 }
+
+@media (max-width: 768px) {
+  .header img{
+    width: 50%
+  }
+  .welcome {
+    font-size: 1rem;
+    padding: 14px !important;
+    border-radius: 2px;
+  }
+}
+
 
 @media screen and (max-width: 767px) {
   h3 {
@@ -441,12 +441,17 @@ width: 49%;
   }
   
   .image-column img {
-    width: 100%;
+    width: 40%;
     height: auto;
   }
+  .image-column .blackbike{
+    width: 50%;
+  }
+  .text-column .right{
+    margin-left: 0px;
+    margin-right: 12px;
+  }
 }
-
-
 
 @media screen and (max-width: 480px) {
   #fast-fresh-heading{
@@ -478,10 +483,42 @@ width: 49%;
 
   .text-column p {
     font-size: 80%;
-    line-height: 140%;
+    line-height: 100%;
+  }
+}
+@media screen and (max-width: 382px){
+  .explore-heading{
+    margin-top: -30px;
+  }
+  .text-column .right{
+    margin-left: 0px;
+    margin-right: 12px;
   }
 }
 
+@media screen and (max-width: 352px) {
+  .explore-heading h2{
+    margin-top: -400px;
+    font-size: 0.6rem;
+  }
+  .headingboth h2{
+    font-size: 22px !important;
+  }
+  .text-column p{
+    line-height: 18px !important;
+    word-spacing: -1px;
+  }
+  .image-column img{
+    width: 90%;
+  }
+  .image-column .blackbike{
+    width: 90%;
+  }
+  .text-column .right{
+    margin-left: 0px;
+    margin-right: 12px;
+  }
+}
 @media screen and (max-width: 360px) {
   .welcome{
     font-size: 68% !important;
@@ -533,6 +570,9 @@ width: 49%;
 @media screen and (max-width: 1020px) {
   #join-adventure-heading{
     margin-bottom: 0px !important;
+  }
+  #join-adventure-heading p{
+    margin-left: -20px!important
   }
   .two-column-layout-two{
     grid-template-columns: 1fr !important;

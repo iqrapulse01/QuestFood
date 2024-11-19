@@ -124,7 +124,7 @@ body {
 
 .section p {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.2;
   color: #fff;
 }
 .text-column {
@@ -194,9 +194,7 @@ body {
   padding-top: 0px;
   color: #fff;
   font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
+  line-height: 24px;
 }
 .image-column img {
   max-width: 100%;
@@ -294,15 +292,6 @@ width: 49%;
   /* height: 80%; */
 }
 
-
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  .header img{
-    width: 300px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .container {
     padding: 5%;
@@ -341,6 +330,43 @@ width: 49%;
   
   .text-column p {
     font-size: 90%;
+  }
+  .bikered img{
+    width: 40%;
+    margin-top: -50px !important;
+  }
+}
+@media screen and (max-width: 1020px) {
+  #join-adventure-heading{
+    margin-bottom: 0px !important;
+  }
+  .three-column-layout-one .text-column p{
+    margin-top: 40px;
+  }
+  .three-column-layout-two{
+    grid-template-columns: 1fr !important;
+  }
+  .three-column-layout-two .text-column .right{
+    margin-right: 0px !important;
+  }
+  #fast-fresh-heading{
+    margin-bottom: 20px !important;
+    margin-top: 0px !important;
+  }
+  .fast-fresh-section{
+    padding-top: 60px;
+  }
+  .coloredbike img{
+    width: 50%;
+    margin-top: -60px !important;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .header img{
+    width: 300px;
   }
 }
 
@@ -387,63 +413,13 @@ width: 49%;
 
   .text-column p {
     font-size: 85%;
-    line-height: 150%;
-  }
-  
-  .image-column img {
-    width: 100%;
-    height: auto;
   }
 }
 
-
-
-@media screen and (max-width: 480px) {
-  #fast-fresh-heading{
-    font-size: 1.7em !important;
-  }
-  .header img{
-    width: 250px;
-  }
-  .welcome{
-    font-size: 72% !important;
-  }
-  .header h1 {
-    font-size: 150%;
-  }
-  .section{
-    padding: 0px;
-  }
-  .section-padding{
-    padding: 20px !important;
-  }
-  .full-width-heading {
-    font-size: 1.5em;
-  }
-
-  .welcome {
-    font-size: 90%;
-  }
-
-  .section h3 {
-    font-size: 110%;
-  }
-
-  .text-column p {
-    font-size: 80%;
-    line-height: 140%;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .welcome{
-    font-size: 68% !important;
-  }
-}
-@media screen and (max-width: 261px) {
-  .header img{
-    width: 200px;
-    padding-left: 20px;
+@media screen and (max-width: 605px) {
+  .coloredbike img, .image-column img {
+    width: 60% !important;
+    margin-top: -30px !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -488,25 +464,85 @@ width: 49%;
   }
 }
 
-
-@media screen and (max-width: 1020px) {
-  #join-adventure-heading{
-    margin-bottom: 0px !important;
-  }
-  .three-column-layout-one .text-column p{
-    margin-top: 40px;
-  }
-  .three-column-layout-two{
-    grid-template-columns: 1fr !important;
-  }
-  .three-column-layout-two .text-column .right{
-    margin-right: 0px !important;
-  }
+@media screen and (max-width: 480px) {
   #fast-fresh-heading{
-    margin-bottom: 20px !important;
-    margin-top: 0px !important;
+    font-size: 1.7em !important;
   }
-  .fast-fresh-section{
-    padding-top: 60px;
+  .header img{
+    width: 250px;
+  }
+  .welcome{
+    font-size: 72% !important;
+  }
+  .header h1 {
+    font-size: 150%;
+  }
+  .section{
+    padding: 0px;
+  }
+  .section-padding{
+    padding: 20px !important;
+  }
+  .full-width-heading {
+    font-size: 1.5em;
+  }
+
+  .welcome {
+    font-size: 90%;
+  }
+
+  .section h3 {
+    font-size: 110%;
+  }
+
+  .text-column p {
+    font-size: 80%;
+  }
+  .coloredbike img, .image-column img {
+    width: 70% !important;
+    margin-top: -30px !important;
   }
 }
+
+
+@media screen and (max-width: 428px) {
+
+}
+
+@media screen and (max-width: 387px) {
+
+  .coloredbike img, .image-column img {
+    width: 70% !important;
+    margin-top: -30px !important;
+  } 
+  .text-column p {
+    font-size: 80%;
+    word-spacing: -1px;
+  }
+
+}
+@media screen and (max-width: 360px) {
+  .welcome{
+    font-size: 68% !important;
+  }
+}
+@media screen and (max-width: 352px) {
+  .welcome{
+    font-size: 68% !important;
+  }
+}
+@media screen and (max-width: 261px) {
+  .header img{
+    width: 200px;
+    padding-left: 20px;
+  }
+  .text-column p {
+    word-spacing: -3px;
+  }
+  .coloredbike img, .image-column img {
+    width: 70% !important;
+    margin-top: 20px !important;
+  } 
+}
+
+
